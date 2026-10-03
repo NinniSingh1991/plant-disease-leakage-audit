@@ -1,0 +1,35 @@
+Copyright (c) 2026 Ninni Singh, Vinit Kumar Gunjan, Rajkumar, Manish Kumar Gupta,
+Sanjay Kumar and Gautam Kumar. All rights reserved.
+
+The files in this repository accompany an article that is under review and has
+not yet been published:
+
+  "Auditing near-duplicate leakage, calibration and label efficiency in plant
+  disease recognition using a hybrid convolutional and gradient-boosted
+  classifier."
+
+Permission is granted to view, download and use these files solely for the
+purposes of peer review of the article and verification of the results it
+reports.
+
+Without the prior written permission of the authors, no part of this
+repository may be:
+  (a) redistributed, republished or mirrored, in whole or in part;
+  (b) used in, or as the basis for, any other publication, thesis, report or
+      dataset;
+  (c) used for any commercial purpose.
+
+These restrictions apply until the article is published. The authors intend
+to release the files under an open licence on publication, and this notice
+will then be updated.
+
+The PlantVillage and FieldPlant images referred to in these files are not
+redistributed here and remain subject to the licences of their original
+datasets.
+
+Requests for permission should be addressed to the corresponding author,
+Gautam Kumar (gautam.kumar@jaipur.manipal.edu).
+
+THE FILES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY ARISING FROM THE USE OF THESE FILES.

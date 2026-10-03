@@ -42,4 +42,4 @@ Accuracy, macro-F1, expected calibration error, Brier score and the coverage–a
 
 ## License
 
-The files in this repository are released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0). The images themselves remain under the licences of their original datasets.
+All rights reserved. The article these files accompany is under review and has not yet been published. The files may be viewed and used only for peer review of the article and verification of its results; redistribution, reuse in other work and commercial use require the written permission of the authors. See [LICENSE](LICENSE) for the full terms. The PlantVillage and FieldPlant images are not redistributed here and remain under the licences of their original datasets.
