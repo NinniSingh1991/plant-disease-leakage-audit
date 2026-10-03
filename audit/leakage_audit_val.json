@@ -1,0 +1,16 @@
+{
+  "n_val": 8146,
+  "n_train": 38012,
+  "threshold": 5,
+  "identical": 6,
+  "near_duplicates": 138,
+  "pct_of_val": 1.6940829855143629,
+  "by_threshold": {
+    "0": 6,
+    "2": 14,
+    "5": 138,
+    "8": 1443,
+    "10": 3545
+  },
+  "verdict": "MATERIAL"
+}

@@ -1,0 +1,59 @@
+{
+  "n_train": 38012,
+  "n_test": 8147,
+  "threshold": 5,
+  "identical": 4,
+  "near_duplicates": 137,
+  "pct_of_test": 1.681600589173929,
+  "by_threshold": {
+    "0": 4,
+    "2": 10,
+    "5": 137,
+    "8": 1432,
+    "10": 3524
+  },
+  "examples": [
+    {
+      "test": "5192db55-4aa7-421c-92d4-c2dac79e7379___RS_HL 6273.JPG",
+      "train": "9b75de13-d4b0-4b3f-988c-3e9926eef957___RS_HL 6273.JPG",
+      "hamming": 0
+    },
+    {
+      "test": "5de6da85-f8c4-48c4-b463-3e6bd78884cc___GHLB_PS Leaf 24 Day 16.jpg",
+      "train": "3fae9c64-18f0-4a67-9f97-554248bb1bed___GHLB_PS Leaf 24 Day 16.jpg",
+      "hamming": 0
+    },
+    {
+      "test": "34c81c57-e1fa-49dd-a49d-34fe8b2385fe___GH_HL Leaf 466.1.JPG",
+      "train": "068e324c-faf6-40d6-8f83-578907f1cac5___GH_HL Leaf 466.1.JPG",
+      "hamming": 0
+    },
+    {
+      "test": "94ca39a0-d4df-44c6-b5cc-a38a754506e5___R.S_HL 0601 copy 3.jpg",
+      "train": "8afc9635-c5e3-41be-aac0-74109d6112ed___R.S_HL 0601 copy 2.jpg",
+      "hamming": 0
+    },
+    {
+      "test": "28c615fe-bb32-4003-9178-1f130c84c0a3___Mt.N.V_HL 9129.JPG",
+      "train": "0c1667a2-61d7-4dee-b4d9-0d141a1ceb20___Mt.N.V_HL 9127.JPG",
+      "hamming": 2
+    },
+    {
+      "test": "3433fd01-b691-4c26-bba7-c60101b9c294___RS_HL 7193.JPG",
+      "train": "d6ff7689-cca4-493e-a75a-e56618ea32c1___RS_HL 7191.JPG",
+      "hamming": 2
+    },
+    {
+      "test": "7626213e-3f4a-4551-b7f0-3c0915e267d9___Mary_HL 9196.JPG",
+      "train": "27ef7a65-771c-4eab-9169-03a5fa121c71___Mary_HL 9195.JPG",
+      "hamming": 2
+    },
+    {
+      "test": "0e74a030-4b86-4c3f-8944-31e68d1911ba___JR_HL 4016.JPG",
+      "train": "a52b26ec-29a5-4bb6-b3e4-f7599240e0d3___JR_HL 4021.JPG",
+      "hamming": 2
+    }
+  ],
+  "verdict": "MATERIAL: the image-level split inflates the test score; re-run with --drop-leaks and regenerate the number",
+  "dropped": 137
+}

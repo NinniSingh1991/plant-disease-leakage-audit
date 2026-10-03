@@ -1,0 +1,46 @@
+{
+  "_source": "Kaggle T4 run, transcribed from console output (file download unavailable)",
+  "_note": "Figures below are as printed by hcpnet_gpu_run.py. The deep_only_control entry carries only the accuracy that appeared in the log line; its macro_f1, ece and brier were not printed to console and are not recorded here.",
+  "device": "cuda",
+  "ssl_epochs": 30,
+  "ft_epochs": 15,
+  "n_classes": 38,
+  "split": "PlantVillage colour, 70/15/15, seed 42, de-duplicated test (8010)",
+  "ssl_loss_curve": {
+    "epoch_1": 3.0564,
+    "epoch_5": 2.9578,
+    "epoch_10": 2.9373,
+    "epoch_15": 2.9221,
+    "epoch_20": 2.9121,
+    "epoch_25": 2.9048,
+    "epoch_30": 2.9024
+  },
+  "val_acc_final": 99.83,
+  "arms": {
+    "D_full_branch_a": {
+      "accuracy": 99.638,
+      "macro_f1": 99.516,
+      "macro_auc": 0.9999,
+      "cohen_kappa": 0.9962,
+      "mcc": 0.9962,
+      "ece": 0.0023,
+      "brier": 0.0061,
+      "n_test": 8010,
+      "n_classes": 38,
+      "head": "xgboost",
+      "fused_dim": 1304,
+      "deep_only_control": {
+        "accuracy": 99.64,
+        "_precision_note": "console rounded to 2dp; fused printed identically at 99.64"
+      },
+      "label_efficiency": {
+        "0.01": {"labels": 383, "accuracy": 98.30},
+        "0.05": {"labels": 1903, "accuracy": 99.21},
+        "0.10": {"labels": 3803, "accuracy": 99.41},
+        "0.25": {"labels": 9501, "accuracy": 99.59},
+        "0.50": {"labels": 19007, "accuracy": 99.63},
+        "1.00": {"labels": 38012, "accuracy": 99.64}
+      }
+    }
+  }
+}

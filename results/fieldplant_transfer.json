@@ -1,0 +1,103 @@
+{
+  "n_leaves": 2320,
+  "n_classes": 7,
+  "mapping": {
+    "Corn leaf blight": "Corn_(maize)___Northern_Leaf_Blight",
+    "Corn Gray leaf spot": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+    "Corn rust leaf": "Corn_(maize)___Common_rust_",
+    "Corn Healthy": "Corn_(maize)___healthy",
+    "Tomato healthy": "Tomato___healthy",
+    "Tomato leaf yellow virus": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+    "Tomato leaf mosaic virus": "Tomato___Tomato_mosaic_virus"
+  },
+  "lab_accuracy": 99.7253,
+  "lab_macro_f1": 99.6525,
+  "fused": {
+    "full38": {
+      "accuracy": 19.439655172413794,
+      "macro_f1": 13.10519958818562
+    },
+    "restricted7": {
+      "accuracy": 34.741379310344826,
+      "macro_f1": 19.91285003294346
+    }
+  },
+  "deep_only": {
+    "full38": {
+      "accuracy": 19.267241379310345,
+      "macro_f1": 12.866972864405026
+    },
+    "restricted7": {
+      "accuracy": 35.689655172413794,
+      "macro_f1": 20.120069733150263
+    }
+  },
+  "descriptor_gain": {
+    "full38": {
+      "accuracy": 0.1724137931034484,
+      "macro_f1": 0.23822672378059373
+    },
+    "restricted7": {
+      "accuracy": -0.948275862068968,
+      "macro_f1": -0.20721970020680303
+    }
+  },
+  "per_class_fused_restricted": [
+    {
+      "class": "Corn_(maize)___Northern_Leaf_Blight",
+      "support": 1652,
+      "precision": 88.25301204819277,
+      "recall": 35.47215496368039,
+      "f1": 50.604490500863555
+    },
+    {
+      "class": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "support": 54,
+      "precision": 8.571428571428571,
+      "recall": 44.44444444444444,
+      "f1": 14.37125748502994
+    },
+    {
+      "class": "Corn_(maize)___Common_rust_",
+      "support": 49,
+      "precision": 3.7593984962406015,
+      "recall": 10.204081632653061,
+      "f1": 5.4945054945054945
+    },
+    {
+      "class": "Corn_(maize)___healthy",
+      "support": 152,
+      "precision": 13.846153846153847,
+      "recall": 82.89473684210526,
+      "f1": 23.728813559322035
+    },
+    {
+      "class": "Tomato___healthy",
+      "support": 279,
+      "precision": 40.27777777777778,
+      "recall": 10.39426523297491,
+      "f1": 16.524216524216524
+    },
+    {
+      "class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "support": 115,
+      "precision": 13.461538461538462,
+      "recall": 30.434782608695656,
+      "f1": 18.666666666666668
+    },
+    {
+      "class": "Tomato___Tomato_mosaic_virus",
+      "support": 19,
+      "precision": 100.0,
+      "recall": 5.263157894736842,
+      "f1": 10.0
+    }
+  ],
+  "baselines_restricted7": {
+    "majority_class": "Corn_(maize)___Northern_Leaf_Blight",
+    "majority_share": 71.20689655172414,
+    "majority_accuracy": 71.20689655172414,
+    "majority_macro_f1": 11.88318227593152,
+    "uniform_random_accuracy": 14.285714285714286
+  }
+}

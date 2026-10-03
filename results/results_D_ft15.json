@@ -1,0 +1,63 @@
+{
+  "device": "cuda",
+  "ssl_epochs": 0,
+  "ft_epochs": 15,
+  "n_classes": 38,
+  "arms": {
+    "D_full_branch_a": {
+      "accuracy": 99.7003745318352,
+      "macro_f1": 99.53501266247224,
+      "macro_precision": 99.59660507865439,
+      "macro_recall": 99.47771543821847,
+      "macro_auc": 0.9999590360809127,
+      "cohen_kappa": 0.9968590663359014,
+      "mcc": 0.9968595549665106,
+      "ece": 0.0018002108427766748,
+      "brier": 0.004892452619969845,
+      "n_test": 8010,
+      "n_classes": 38,
+      "head": "xgboost",
+      "fused_dim": 1304,
+      "deep_only_control": {
+        "accuracy": 99.7003745318352,
+        "macro_f1": 99.53501266247224,
+        "macro_precision": 99.59660507865439,
+        "macro_recall": 99.47771543821847,
+        "macro_auc": 0.9999586126477117,
+        "cohen_kappa": 0.9968590663359014,
+        "mcc": 0.9968595549665106,
+        "ece": 0.0017299268129613154,
+        "brier": 0.004879928193986416,
+        "n_test": 8010,
+        "n_classes": 38
+      },
+      "label_efficiency": {
+        "0.01": {
+          "labels": 383,
+          "accuracy": 97.40324594257179
+        },
+        "0.05": {
+          "labels": 1903,
+          "accuracy": 99.36329588014982
+        },
+        "0.10": {
+          "labels": 3803,
+          "accuracy": 99.50062421972534
+        },
+        "0.25": {
+          "labels": 9501,
+          "accuracy": 99.57553058676653
+        },
+        "0.50": {
+          "labels": 19007,
+          "accuracy": 99.67540574282148
+        },
+        "1.00": {
+          "labels": 38012,
+          "accuracy": 99.71285892634208
+        }
+      },
+      "val_acc_softmax": 99.87724036336853
+    }
+  }
+}
