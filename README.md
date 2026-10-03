@@ -10,8 +10,8 @@ It contains the partition, the near-duplicate audit output, the field-transfer c
 
 | Path | Description |
 |---|---|
-| `partition/plantvillage_partition.csv` | Split assignment (train, val or test) of every PlantVillage colour image, with a flag for the test images removed by the audit |
-| `partition/removed_test_images.csv` | The 137 test images within Hamming distance 5 of a training image, removed before evaluation |
+| `partition/plantvillage_partition.csv` | Split assignment (train, val or test) of every PlantVillage colour image, with a flag marking the test images excluded from evaluation by the audit |
+| `partition/removed_test_images.csv` | File names and classes of the 137 near-duplicate test images (within Hamming distance 5 of a training image) excluded from evaluation; the images themselves are not included |
 | `partition/fieldplant_category_mapping.csv` | Mapping of the seven FieldPlant categories to PlantVillage classes used in the field-transfer evaluation |
 | `audit/leakage_audit_test.json` | Near-duplicate audit of the test split against the training split (counts at thresholds 0, 2, 5, 8 and 10; closest pairs) |
 | `audit/leakage_audit_val.json` | The same audit for the validation split |
@@ -32,7 +32,7 @@ Accuracy, macro-F1, expected calibration error, Brier score and the coverage–a
 
 - Source: PlantVillage colour images (54,305 files, 38 classes).
 - Split: stratified 70/15/15 per class. Within each class the file names are sorted, permuted with `numpy.random.default_rng(42)`, and divided in that order, with classes processed in sorted order.
-- Audit: every image is reduced to a 64-bit difference hash; each test image is compared with the whole training split by multi-index hashing. Test images within Hamming distance 5 of a training image are removed (137 images, four byte-identical).
+- Audit: every image is reduced to a 64-bit difference hash; each test image is compared with the whole training split by multi-index hashing. Test images within Hamming distance 5 of a training image are excluded from evaluation (137 images, four byte-identical).
 - Resulting sizes: 38,012 train, 8,146 validation and 8,010 test images.
 
 ## Datasets
